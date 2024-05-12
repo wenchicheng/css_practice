@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      /* 這時元素本身的寬度、高度就會包含 border 和 padding (不會向外推) */
+      box-sizing: border-box;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-color: #ccc;
+      background:
+        linear-gradient(115deg, #7bf 50%, transparent 50%)center center / 100% 100%,
+        url("https://picsum.photos/1200/600/?random=10") right center / auto 100%;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: auto;
+      height: 100%;
+
+    }
+
+    .banner-txt {
+      height: 100%;
+      display: flex;
+      /* 直向排列 */
+      flex-direction: column;
+      /* 對齊置中 */
+      justify-content: center;
+      /* 設定txt區塊 不填滿整個寬度 */
+      align-items: flex-start;
+    }
+
+    .banner-txt h1 {
+      font-size: 80px;
+      border-bottom: 1px solid #333;
+      font-weight: 900;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+    }
+
+    .banner-txt h1 small {
+      display: block;
+      font-size: 53px;
+      font-weight: 700;
+    }
+
+    .banner-txt h2 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .banner-txt p {
+      font-size: 24px;
+      font-weight: 300;
+      max-width: 500px;
+      margin-bottom: 1em;
+    }
+
+    .btn {
+      min-width: 160px;
+      background-color: #fff;
+      border: 0;
+      border-radius: 5px;
+      border-bottom: 4px solid #d9d9d9;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0px 5px 10px #0057ab;
+      transition: all 0.3s;
+      padding: 10px 20px;
+    }
+
+    .btn:hover {
+      box-shadow: 0px 15px 25px -5px #0057ab;
+      transform: scale(1.03);
+    }
+
+    .btn:active {
+      box-shadow: 0px 4px 8px #0057ab;
+      transform: scale(0.98);
+    }
+
+    .btn a {
+      text-decoration: none;
+      color: #0057ab;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="banner">
+    <div class="container">
+      <div class="banner-txt">
+        <h1>
+          CSS
+          <small>
+            基礎 - 01
+          </small>
+        </h1>
+        <h2>圖文滿版區塊</h2>
+        <p>常見的畫面，必須熟悉
+          <br>
+          師傅恢復始終破解結婚制定重量得到筆者大人逐步，以及項目點此大盤，基礎上全市熱情報導旁邊想到研究不禁。
+        </p>
+
+        <button class="btn">
+          <a href="https://www.youtube.com/watch?v=rwTMBmnIHcY" target="_blank">參考影片</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
